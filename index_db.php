@@ -31,17 +31,14 @@ if(isset($_POST['studentid']) && isset($_POST['personid'])) {
                 header("Location: transcript.php");
                 exit();
             }else {
-                header("Location: error.php?");
+                header("Location: error.php");
                 exit();
             }
         }else {
-            header("Location: error.php?");
+            header("Location: error.php");
             exit();
         }
     }
-}else {
-    header("Location: index.php");
-    exit();
 }
 
 
