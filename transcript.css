@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+	font-family: TH SarabunPSK, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #146C94;
+}
+
+.main-name-logo {
+	display: none;
+}
+
+.main-name-logo  > .photo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.main-name-logo  > h1{
+	margin-bottom: 5px;
+    text-align: center;
+}
+
+.main-name-logo  > .h2-school-name {
+	text-align: center;
+    margin: 0;
+}
+
+.td-header {
+	width:100%;
+	height: 100%;	
+	background-color: #AFD3E2;
+    font-size: 20px;
+}
+
+.td-header > div {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+.th-photo > img {
+	height: 150px;
+	width: 130px;
+}
+
+.th-ps-info {
+	padding: 20px;
+}
+
+.table-nameclass-teacher {
+	background-color: #AFD3E2;
+    width: 100%;
+    font-size: 25px;
+    height: 50%;
+    margin-bottom: 7px;
+}
+
+.table-score .th-note,
+.table-score .td-note {
+    display: none;
+}
+
+
+
+.teacher-executive-box {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.span-teacher, .span-executive, .span-parent {
+    display: block;
+    text-align: center;
+    width: 100%; /* เพิ่มขนาดเพื่อให้กว้างขึ้น */
+    margin: 10px 0;
+}
+
+
+.btn {
+	display: flex;
+	margin-top: 20px;
+	justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+	width: 200px;
+	padding: 15px;
+	margin-top: 20px;
+	background-color: #19A7CE;;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button {
+	width: 200px;
+	padding: 15px;
+	margin-top: 20px;
+	background-color: #AFD3E2;
+	text-align: center;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+}
+
+a:hover {
+	background-color: #AFD3E2;
+}
+
+button:hover {
+	background-color: #19A7CE;
+}
+
+
+@media print {
+    @page {
+        size: A4 landscape;
+    }
+
+	.main-name-logo {
+		display: block;
+	}
+
+	.td-header {
+		display: none;
+	}
+
+	.result {
+		display: none;
+	}
+
+    .table-score .th-note,
+    .table-score .td-note {
+        display: table-cell ;
+    }
+
+	.teacher-executive-box {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+	
+	.span-teacher, .span-executive, .span-parent {
+		display: block;
+		text-align: center;
+		width: 100%; /* เพิ่มขนาดเพื่อให้กว้างขึ้น */
+		margin: 10px 0;
+		padding-left: 10px;
+	}
+
+
+    a, button {
+        display: none ;
+    }
+}
