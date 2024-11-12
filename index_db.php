@@ -3,11 +3,11 @@ session_start();
 include "database.php";
 
 if(isset($_POST['studentid']) && isset($_POST['personid'])) {
-    function validate($data) {
-        $data = trim($data);
-        $data = stripcslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
+        function validate($data) {
+            $data = trim($data);
+            $data = stripcslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
     }
 
     $dentid = validate($_POST['studentid']);
